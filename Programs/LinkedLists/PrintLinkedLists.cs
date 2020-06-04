@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Practise.Programs
+namespace Practise.Programs.LinkedLists
 {
     public class PrintLinkedLists
     {

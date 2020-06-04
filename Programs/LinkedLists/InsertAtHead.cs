@@ -3,7 +3,7 @@ using System.IO;
 
 namespace Practise.Programs.LinkedLists
 {
-    public class InsertAtTail
+    public class InsertAtHead
     {
         class SinglyLinkedListNode
         {
@@ -26,19 +26,11 @@ namespace Practise.Programs.LinkedLists
                 this.head = null;
             }
 
-            public void insertNodeAtTail(int data)
+            public void insertNodeAtHead(int data)
             {
-                if (head == null)
-                    head = new SinglyLinkedListNode(data);
-                else
-                {
-                    SinglyLinkedListNode temp = head;
-                    while (temp.next != null)
-                    {
-                        temp = temp.next;
-                    }
-                    temp.next = new SinglyLinkedListNode(data);
-                }
+                SinglyLinkedListNode newHead = new SinglyLinkedListNode(data);
+                newHead.next = head;
+                head = newHead;
             }
         }
 
@@ -46,7 +38,7 @@ namespace Practise.Programs.LinkedLists
         {
             SinglyLinkedList llist = new SinglyLinkedList();
 
-            llist.insertNodeAtTail(13);
+            llist.insertNodeAtHead(13);
         }
     }
 }

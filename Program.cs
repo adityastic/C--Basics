@@ -1,5 +1,6 @@
 ﻿using System;
 using Practise.Programs;
+using Practise.Programs.LinkedLists;
 
 namespace Practise
 {
@@ -10,6 +11,10 @@ namespace Practise
             System.Console.WriteLine("Sparse Array -> ");
             SparseArrays.execute();
             System.Console.WriteLine("\n\nPrint Linked List-> ");
+            PrintLinkedLists.execute();
+            System.Console.WriteLine("\n\nInsert Tail Linked List-> ");
+            InsertAtHead.execute();
+            System.Console.WriteLine("\n\nInsert Head Linked List-> ");
             PrintLinkedLists.execute();
         }
     }
