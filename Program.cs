@@ -1,12 +1,16 @@
 ﻿using System;
+using Practise.Programs;
 
-namespace HackerRank
+namespace Practise
 {
     class Program
     {
         static void Main(string[] args)
         {
+            System.Console.WriteLine("Sparse Array -> ");
             SparseArrays.execute();
+            System.Console.WriteLine("\n\nPrint Linked List-> ");
+            PrintLinkedLists.execute();
         }
     }
 }

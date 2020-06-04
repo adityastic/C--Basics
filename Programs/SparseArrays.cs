@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace HackerRank
+namespace Practise.Programs
 {
     public class SparseArrays
     {
