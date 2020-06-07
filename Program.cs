@@ -13,9 +13,9 @@ namespace Practise
             System.Console.WriteLine("\n\nPrint Linked List-> ");
             PrintLinkedLists.execute();
             System.Console.WriteLine("\n\nInsert Tail Linked List-> ");
-            InsertAtHead.execute();
+            InsertAtTail.execute();
             System.Console.WriteLine("\n\nInsert Head Linked List-> ");
-            PrintLinkedLists.execute();
+            InsertAtHead.execute();
         }
     }
 }
