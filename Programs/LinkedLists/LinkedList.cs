@@ -93,6 +93,19 @@ namespace Practise.Programs.LinkedLists
                     temp = temp.next;
                 }
             }
+
+            public void reverseLinkedList()
+            {
+                SinglyLinkedListNode curr = head, prev = null, next = null;
+                while (curr != null)
+                {
+                    next = curr.next;
+                    curr.next = prev;
+                    prev = curr;
+                    curr = next;
+                }
+                head = prev;
+            }
         }
 
         public static void execute()
@@ -109,6 +122,8 @@ namespace Practise.Programs.LinkedLists
             llist.deleteNodeAtPosition(2);
 
             llist.reversePrint();
+            llist.print();
+            llist.reverseLinkedList();
             llist.print();
         }
     }
