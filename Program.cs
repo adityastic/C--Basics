@@ -16,6 +16,10 @@ namespace Practise
             InsertAtTail.execute();
             System.Console.WriteLine("\n\nInsert Head Linked List-> ");
             InsertAtHead.execute();
+            System.Console.WriteLine("\n\nDelete Linked List-> ");
+            DeleteNode.execute();
+            System.Console.WriteLine("\n\nPrint in Reverse Linked List-> ");
+            PrintInReverse.execute();
         }
     }
 }
