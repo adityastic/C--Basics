@@ -106,6 +106,30 @@ namespace Practise.Programs.LinkedLists
                 }
                 head = prev;
             }
+
+            public bool compareLists(SinglyLinkedList list)
+            {
+                SinglyLinkedListNode head1 = head, head2 = list.head;
+
+                if (head1 == null && head2 == null)
+                    return true;
+
+                if (head1 == null || head2 == null)
+                    return false;
+
+                while (head1 != null && head2 != null)
+                {
+                    if (head1.data != head2.data)
+                        return false;
+                    head1 = head1.next;
+                    head2 = head2.next;
+                }
+
+                if (head1 != null || head2 != null)
+                    return false;
+
+                return true;
+            }
         }
 
         public static void execute()
@@ -125,6 +149,8 @@ namespace Practise.Programs.LinkedLists
             llist.print();
             llist.reverseLinkedList();
             llist.print();
+
+            System.Console.Write("Lists Same: " + llist.compareLists(llist));
         }
     }
 }
